@@ -38,6 +38,7 @@ public class LotoFacil {
                             System.out.println("Que pena! O número sorteado foi: " + resultado);
                         }
                     }
+                    break;
 
 
                 case 2:
@@ -54,12 +55,11 @@ public class LotoFacil {
                     }
 
                     if (aposta2 == letrapremiada) {
-                        System.out.println("Você ganhou R$ 500,00" +
-                                "reais.");
+                        System.out.println("Você ganhou R$ 500,00 reais.");
                     } else {
                         System.out.println("Que pena! A letra sorteada foi: " + letrapremiada);
                     }
-
+                    break;
 
                 case 3:
                     int aposta3;
@@ -72,6 +72,8 @@ public class LotoFacil {
                     else {
                         System.out.println("Que pena! O número digitado é ímpar e a premiação foi para números pares.");
                     }
+                    break;
+
             }
         } while (opcao != 0) ;
     }
