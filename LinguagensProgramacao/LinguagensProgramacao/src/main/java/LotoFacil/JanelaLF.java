@@ -27,29 +27,29 @@ public class JanelaLF extends JFrame {
                 Random gerador = new Random();
                 int resultado = gerador.nextInt(101);
                 String aposta = JOptionPane.showInputDialog(null,
-                        "Digite um número de 0 a 100"); //Scanner in = new Scanner(System.in)
+                        "Digite um número de 0 a 100");                         //Scanner in = new Scanner(System.in)
                 int numeroApostado = Integer.parseInt(aposta);
                 if(numeroApostado == resultado){
-                    JOptionPane.showMessageDialog(null, "Parabéns! Você ganhou 1000 reais.");//System.out.println
+                    JOptionPane.showMessageDialog(null, "Parabéns! Você ganhou 1000 reais.");           //System.out.println
                 }
                 else{
                     JOptionPane.showMessageDialog(null, "Que pena, você errou! \n O número sorteado era: " + resultado);
                 }
             }
-        });
+        });    //Atribuir a ação do botão 1
 
         jButtonAposta2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 char letrapremiada = 'A';
                 String letraApostada = JOptionPane.showInputDialog(null,
-                        "Digite uma letra de A a Z"); //Scanner in = new Scanner(System.in)
+                        "Digite uma letra de A a Z");                           //Scanner in = new Scanner(System.in)
 
                 if (Character.isLetter(letraApostada.charAt(0))) {
                     char letraMaiuscula = Character.toUpperCase(letraApostada.charAt(0));
 
                     if(letraMaiuscula == letrapremiada){
-                        JOptionPane.showMessageDialog(null, "Parabéns! Você ganhou 500 reais.");//System.out.println
+                        JOptionPane.showMessageDialog(null, "Parabéns! Você ganhou 500 reais.");        //System.out.println
                     }
                     else{
                         JOptionPane.showMessageDialog(null, "Que pena, você errou! \n A letra sorteada era:  " + letrapremiada);
@@ -58,22 +58,22 @@ public class JanelaLF extends JFrame {
                     JOptionPane.showMessageDialog(null, "Aposta inválida.");
                 }
             }
-        });
+        });   //Atribuir a ação do botão 2
 
         jButtonAposta3.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String numeroPI = JOptionPane.showInputDialog(null,
-                        "Digite um numero qualquer"); //Scanner in = new Scanner(System.in)
+                        "Digite um numero qualquer");                           //Scanner in = new Scanner(System.in)
                 int numero = Integer.parseInt(numeroPI);
                 if(numero % 2 == 0){
-                    JOptionPane.showMessageDialog(null, "Parabéns! Você ganhou 100 reais.");//System.out.println
+                    JOptionPane.showMessageDialog(null, "Parabéns! Você ganhou 100 reais.");            //System.out.println
                 }
                 else{
                     JOptionPane.showMessageDialog(null, "Que pena, você errou! \n O vencedor era par. ");
                 }
             }
-        });
+        });    //Atribuir a ação do botão 3
 
         painel.add(jButtonAposta1);
         painel.add(jButtonAposta2);
