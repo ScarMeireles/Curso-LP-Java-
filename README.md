@@ -15,6 +15,7 @@ SDK 17
 java.io.IOException;
 java.util.Scanner;
 java.util.Random;
+extends JFrame (javax.swing.*; java.awt.*; java.awt.event.ActionEvent; java.awt.event.ActionListener; java.util.Random)
 
 ***********************************
 
